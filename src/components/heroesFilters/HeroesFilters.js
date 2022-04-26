@@ -1,6 +1,6 @@
 import { useHttp } from '../../hooks/http.hook';
 import { useEffect } from 'react';
-import { useDispatch, useSelector } from 'react-redux';
+import { useDispatch, useSelector } from 'react-redux'; // useSelector - с его помощью получаем значение напрямую из стора
 import classNames from 'classnames';
 
 import {
@@ -17,7 +17,7 @@ import Spinner from '../spinner/Spinner';
 
 const HeroesFilters = () => {
 
-    const { filters, filtersLoadingStatus, activeFilter } = useSelector(state => state.filters); // получаю инфу из редьюсера filters
+    const { filters, filtersLoadingStatus, activeFilter } = useSelector(state => state.filters); // получаю инфу из редьюсера filters. 
     const dispatch = useDispatch();
     const { request } = useHttp();
 

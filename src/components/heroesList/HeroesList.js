@@ -1,6 +1,6 @@
 import { useHttp } from '../../hooks/http.hook';
 import { useEffect, useCallback } from 'react';
-import { useDispatch, useSelector } from 'react-redux';
+import { useDispatch, useSelector } from 'react-redux'; // useSelector - с его помощью получаем значение напрямую из стора
 import { CSSTransition, TransitionGroup } from 'react-transition-group';
 import { createSelector } from 'reselect' // используй reselect чтобы мемоизировать состяние для useSelector (если значение в useSelector не изменилось, пусть не происходит его перерендер)  npm i reselect --save
 
@@ -39,7 +39,7 @@ const HeroesList = () => {
     //     }
     // });
 
-    const filteredHeroes = useSelector(filteredHeroesSelector); // назначаю переменной значение в useSelector из reselect (createSelector)
+    const filteredHeroes = useSelector(filteredHeroesSelector); // назначаю переменной значение в useSelector из reselect (createSelector) В скобках в useSelector свойства которые мы передаем в filteredHeroes
     const heroesLoadingStatus = useSelector(state => state.heroes.heroesLoadingStatus);
     const dispatch = useDispatch();
     const { request } = useHttp();
