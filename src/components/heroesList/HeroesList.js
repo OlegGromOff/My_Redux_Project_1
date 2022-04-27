@@ -17,7 +17,7 @@ import './heroesList.scss';
 
 const HeroesList = () => {
 
-    const filteredHeroesSelector = createSelector(  // мемоизирую значения в useSelector
+    const filteredHeroesSelector = createSelector(  // мемоизирую значения в useSelector (если в state изменилось ничего не изменилось, чтобы ВЕСЬ стейт не перерендеривался (перерендеривается оно бывает из-за того что передевая в стейт таое же значение мы получаем уже другой объект с таким же значением, а объекты никогда не равны друг другу))
         (state) => state.filters.activeFilter, // получил первое значение кооторое мне нужно
         (state) => state.heroes.heroes, // получил второе значение кооторое мне нужно
         (filter, heroes) => { // filter это первое значение которое я получил чуть выше, а heroes второе
