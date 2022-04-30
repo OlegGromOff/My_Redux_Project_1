@@ -7,21 +7,21 @@
       "element": "earth"
     },
     {
-      "id": "0bfc9e14-07fe-4a86-99bb-ab8afe92d1ab",
-      "name": "test",
-      "description": "sdfsdg",
-      "element": "water"
-    },
-    {
       "id": "96e1358c-f717-4d86-87b7-1ef99e1aa16c",
       "name": "test",
       "description": "tyut",
       "element": "fire"
     },
     {
-      "id": "ddb53997-0b37-4408-9717-cf4ff853acfe",
+      "id": "8ff1d88d-d477-400b-8b82-b5dc0336d4e5",
       "name": "Олег",
-      "description": "1",
+      "description": "t",
+      "element": "water"
+    },
+    {
+      "id": "940db02f-6929-4fc3-8daa-c951375fa55d",
+      "name": "Олег Громов",
+      "description": "рва",
       "element": "water"
     }
   ],

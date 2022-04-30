@@ -57,7 +57,7 @@ export const activeFilterChanged = (filter) => {
     }
 }
 
-// export const activeFilterChanged = (filter) => (dispatch) => { //redux-thunk автоматически передает dispatch в action
+// export const activeFilterChanged = (filter) => (dispatch) => { //redux-thunk автоматически передает dispatch в этот action
 //     setTimeout(() => { // запускаем нужный dispatch через секунду
 //         dispatch({
 //             type: 'ACTIVE_FILTER_CHANGED',
